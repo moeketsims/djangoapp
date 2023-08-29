@@ -1,0 +1,47 @@
+{% load widget_tweaks %}
+
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>Page Title</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="">
+<style>
+</style>
+<script src=""></script>
+<body>
+
+<div class="">
+
+<form action="#" method="POST" enctype="multipart/form-data">
+    <div class="form-group">
+        <label for="name">Enter Age:</label>
+        {% render_field form.age class="form-control" placeholder="Age"%}
+    </div>
+
+    <div class="form-group">
+        <label for="name">Enter X:</label>
+        {% render_field form.x class="form-control" placeholder="Age"%}
+    </div>
+
+    <div class="form-group">
+        <label for="name">Enter Y:</label>
+        {% render_field form.y class="form-control" placeholder="Enter Y"%}
+    </div>
+
+    <div class="form-group">
+        <label for="name">Enter K:</label>
+        {% render_field form.k class="form-control" placeholder="Enter K"%}
+    </div>
+
+    <input type="submit", name="submit">
+
+</form>
+
+</div>
+
+</body>
+</html>
+
+
+
